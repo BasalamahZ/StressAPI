@@ -29,7 +29,7 @@ def user_list(request):
         if user_serializer.is_valid():
             user_serializer.save()
             return JsonResponse(user_serializer.data, status=status.HTTP_201_CREATED) 
-        return JsonResponse(user_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        return JsonResponse(user_serializer.data, status=status.HTTP_200_OK)
 
 @api_view(['GET'])
 def user_detail(request, id):

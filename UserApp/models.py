@@ -7,7 +7,7 @@ class Users(models.Model):
     email = models.EmailField(max_length=500, unique=True, blank=False,  db_column="email")
 
     def __str__(self):
-        return self.ID
+        return self.email
 
 class Data(models.Model):
     id = models.AutoField(primary_key=True,  db_column="id")

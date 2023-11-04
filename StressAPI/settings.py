@@ -62,14 +62,14 @@ MIDDLEWARE = [
 
 # SESSION_COOKIE_HTTPONLY = True
 
-# CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_CREDENTIALS = True
 
-# CORS_ALLOW_HEADERS = [
-#     "access-control-allow-credentials",
-#     "content-type",
-#     "X-Csrftoken"
-#     # Add any other headers you need to allow here
-# ]
+CORS_ALLOW_HEADERS = [
+    "access-control-allow-credentials",
+    "content-type",
+    "X-Csrftoken"
+    # Add any other headers you need to allow here
+]
 
 # CORS_ORIGIN_WHITELIST = ["http://localhost:8000", "http://192.168.56.1:8000"]
 
